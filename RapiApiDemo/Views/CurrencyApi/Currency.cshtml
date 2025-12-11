@@ -1,0 +1,11 @@
+﻿ @model CurrencyApiResponse
+@{
+    Layout = null;
+}
+<p>Success: @Model.Success</p>
+
+@foreach(var item in Model.Symbols){
+    <p>@item.Key - @item.Value</p>
+}
+
+
