@@ -1,0 +1,9 @@
+﻿@model CurrentWeatherViewModel
+@{
+    Layout = null;
+}
+
+<p>Summery : @Model.summery</p>
+<p>Coord : @Model.coord.lon - @Model.coord.lat</p>
+<p>Wind : @Model.wind.speed - @Model.wind.degrees</p>
+<p>Snow : @Model.snow.amount - @Model.snow.unit</p>
