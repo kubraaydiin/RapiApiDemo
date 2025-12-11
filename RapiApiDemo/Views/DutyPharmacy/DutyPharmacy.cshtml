@@ -1,0 +1,12 @@
+﻿@model DutyPharmacyViewModel
+@{
+    Layout = null;
+}
+
+<p>@Model.status</p>
+<p>@Model.message</p>
+<p>@Model.recent_update</p>
+
+@foreach(var item in Model.locations){
+    <p>@item.city - @item.district - @item.name - @item.address - @item.phone</p>
+}
